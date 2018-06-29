@@ -15,7 +15,8 @@ class String
   end
 
   def count_sentences
-    self.split(".", "!")
+    array = self.split(".", "!")
+    binding.pry
     array.reject!(&:empty?)
     array.size
   end
